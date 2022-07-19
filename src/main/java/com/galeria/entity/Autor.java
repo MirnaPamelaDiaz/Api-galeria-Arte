@@ -26,11 +26,9 @@ public class Autor {
 
     private String nacionalidad;
 
-    private Tipo tipo;
-
     @Column(nullable = false)
     private Boolean alta = true;
-    
+
     @OneToMany
     private List<Obra> obraList = new ArrayList<>();
 }
