@@ -29,4 +29,7 @@ public class Obra {
   private String foto;
 
   private Tipo tipo;
+
+  @Column(nullable = false)
+  private Boolean alta = true;
 }
