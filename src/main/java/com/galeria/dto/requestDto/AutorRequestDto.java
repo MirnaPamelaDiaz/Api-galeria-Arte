@@ -1,4 +1,4 @@
-package com.galeria.dto.requestDto;
+package com.galeria.entity.dto.requestDto;
 
 import com.galeria.entity.Tipo;
 import lombok.Getter;

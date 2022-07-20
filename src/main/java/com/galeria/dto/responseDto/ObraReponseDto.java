@@ -1,4 +1,4 @@
-package com.galeria.dto.responseDto;
+package com.galeria.entity.dto.responseDto;
 
 import com.galeria.entity.Autor;
 import com.galeria.entity.Tipo;
