@@ -1,4 +1,4 @@
-package com.galeria.entity.dto.responseDto;
+package com.galeria.dto.responseDto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,6 +13,9 @@ public class AutorResponseDto {
 
     private String nacionalidad;
 
-    private ObraReponseDto obraReponseDto;
+    //TODO una vez hecho los metodos de Dto de obra verificar que traiga la lista
+
+    //private List<ObraReponseDto> obraReponseDtoList;
+
 
 }
