@@ -3,6 +3,8 @@ package com.galeria.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 
@@ -11,6 +13,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "obra")
+@SQLDelete(sql = "UPDATE obra SET alta=false WHERE id = ?")
+@Where(clause = "alta = true")
 public class Obra {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +23,7 @@ public class Obra {
 
   private String titulo;
 
-  private Integer año;
+  private Integer anio;
 
   @ManyToOne
   private Autor autor;
@@ -28,6 +32,7 @@ public class Obra {
 
   private String foto;
 
+  @Enumerated(EnumType.STRING)
   private Tipo tipo;
 
   @Column(nullable = false)
