@@ -6,11 +6,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ObraRequestDto {
-    private Integer id;
-
     private String titulo;
 
-    private Integer año;
+    private Integer anio;
 
     private String autorNombre;
 
@@ -20,5 +18,4 @@ public class ObraRequestDto {
 
     private Tipo tipo;
 
-    private Boolean alta = true;
 }
